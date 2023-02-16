@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #222831, #393e46, #00adb5, #eeeeee);
+  overflow: hidden;
+}
+
+main {
+  margin: 35px auto;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+main h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+main .score {
+  font-size: 4rem;
+  color: rgb(0, 212, 255);
+}
+main .left {
+  background-color: #3c84ab;
+  width: 50%;
+  padding: 80px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.3s linear;
+}
+main .right {
+  background-color: #3c84ab;
+  width: 50%;
+  padding: 80px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.3s linear;
+}
+main .current {
+  width: 45%;
+  background-color: rgb(0, 212, 255);
+  padding: 15px;
+  text-align: center;
+  margin: 150px auto 0px;
+  border-radius: 10px;
+  height: 120px;
+}
+main .current .currentText {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+main .current .currentPoint {
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.button {
+  position: absolute;
+  left: 50%;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s linear;
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.button.btn-new {
+  top: 12%;
+}
+.button.btn-roll {
+  top: 66%;
+}
+.button.btn-hold {
+  top: 75%;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 13rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}/*# sourceMappingURL=style.css.map */
